@@ -1,6 +1,5 @@
-pub fn dynamic_array() {
+pub fn dynamic_array() {}
 pub fn static_array() {}
-
 
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
