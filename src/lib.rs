@@ -1,3 +1,4 @@
+pub mod linked_list;
 pub fn dynamic_array() {
     let mut dynamic_array: Vec<i32> = Vec::new();
     // add elements
