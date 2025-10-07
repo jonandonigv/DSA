@@ -27,7 +27,10 @@ pub fn dynamic_array() {
     // print the final array
     println!("Final array: {:?}", dynamic_array);
 }
-pub fn static_array() {}
+pub fn static_array() {
+    let numbers: [i32; 3] = [1, 2, 3];
+    println!("Numbers: {:?}", numbers);
+}
 
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
