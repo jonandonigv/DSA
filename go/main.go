@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	linked_list "github.com/jonandonigv/DSA/list"
+	"github.com/jonandonigv/DSA/list/d_linked_list"
 )
 
 func main() {
@@ -20,4 +21,23 @@ func main() {
 	l.DeleteByValue(1)
 	fmt.Println("After deleting 1:")
 	l.Print()
+
+	dl := d_linked_list.DoublyLinkedList{}
+
+	fmt.Println("Doubly linked list: ")
+
+	dl.Append(1)
+	dl.Append(2)
+	dl.Append(3)
+	dl.Append(0)
+
+	fmt.Println("Forward traversal: ")
+	dl.Display()
+
+	fmt.Println("Reverse traversal: ")
+	dl.DisplayReverse()
+
+	dl.Delete(2)
+	fmt.Println("After deleting 2:")
+	dl.Display()
 }
