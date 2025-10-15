@@ -30,6 +30,7 @@ func main() {
 	dl.Append(2)
 	dl.Append(3)
 	dl.Append(0)
+	dl.Append(4)
 
 	fmt.Println("Forward traversal: ")
 	dl.Display()
