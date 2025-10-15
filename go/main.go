@@ -3,12 +3,24 @@ package main
 import (
 	"fmt"
 
+	"github.com/jonandonigv/DSA/arrays"
 	linked_list "github.com/jonandonigv/DSA/list"
 	"github.com/jonandonigv/DSA/list/d_linked_list"
 	"github.com/jonandonigv/DSA/stack"
 )
 
 func main() {
+	fmt.Println("Arrays: ")
+	da := arrays.DynamicArray{}
+	da.NewDynamicArray(2)
+	da.Append(1)
+	da.Append(2)
+	da.Append(3)
+	da.Append(4)
+	fmt.Println("Dynamic Array: ", da)
+	da.Print()
+	fmt.Printf("Length: %d, Capacity: %d\n", da.Len(), da.Cap())
+
 	l := linked_list.List{}
 	l.InsertAtTail(1)
 	l.InsertAtTail(1)
