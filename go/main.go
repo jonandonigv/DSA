@@ -5,6 +5,7 @@ import (
 
 	linked_list "github.com/jonandonigv/DSA/list"
 	"github.com/jonandonigv/DSA/list/d_linked_list"
+	"github.com/jonandonigv/DSA/stack"
 )
 
 func main() {
@@ -41,4 +42,27 @@ func main() {
 	dl.Delete(2)
 	fmt.Println("After deleting 2:")
 	dl.Display()
+
+	fmt.Println("Stack: ")
+	s := stack.Stack{}
+
+	s.Push(1)
+	s.Push(2)
+	s.Push(3)
+	s.Push(4)
+	fmt.Println("Stack size: ", s.Size())
+
+	if top, err := s.Peek(); err == nil {
+		fmt.Println("Top element: ", top)
+	}
+
+	for !s.IsEmpty() {
+		if item, err := s.Pop(); err == nil {
+			fmt.Println("Popped: ", item)
+		}
+	}
+
+	if _, err := s.Pop(); err != nil {
+		fmt.Println("Error: ", err)
+	}
 }
