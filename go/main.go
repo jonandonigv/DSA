@@ -55,7 +55,7 @@ func main() {
 	fmt.Println("After deleting 2:")
 	dl.Display()
 
-	fmt.Println("Stack: ")
+	fmt.Println("Stack ->")
 	s := stack.Stack{}
 
 	s.Push(1)
