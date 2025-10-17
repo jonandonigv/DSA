@@ -2,6 +2,13 @@ package stack
 
 import "errors"
 
+// When and where to use a stack
+// 1) Used by undo mechanisms in text editors
+// 2) Used by compiler syntax checking for matching brackets and braces
+// 3) Can be used to model a pile of books
+// 4) Used behind the scenes to support recursion by keeping track of previous function calls
+// 5) Can be used to do Depth First Search (DFS) on a graph
+
 type Stack struct {
 	items []int
 }
