@@ -2,6 +2,14 @@ package linked_list
 
 import "fmt"
 
+// When and where to use a linked list
+// 1) Used in many List, Queue & Stack implementation
+// 2) Great for creating circular list
+// 3) Can easily model real world objects such as trains
+// 4) Used in separate chaining, which is present in certain HASHTABLE implementation
+// to deal with hashing collisions
+// 5) Often used in the implementation of adjacency list for graphs
+
 type Node struct {
 	Data int
 	Next *Node
