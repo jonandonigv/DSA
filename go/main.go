@@ -6,6 +6,7 @@ import (
 	"github.com/jonandonigv/DSA/arrays"
 	linked_list "github.com/jonandonigv/DSA/list"
 	"github.com/jonandonigv/DSA/list/d_linked_list"
+	"github.com/jonandonigv/DSA/queue"
 	"github.com/jonandonigv/DSA/stack"
 )
 
@@ -77,4 +78,8 @@ func main() {
 	if _, err := s.Pop(); err != nil {
 		fmt.Println("Error: ", err)
 	}
+
+	fmt.Println("Queue ->")
+	q := queue.NewQueue()
+	fmt.Println(q)
 }
